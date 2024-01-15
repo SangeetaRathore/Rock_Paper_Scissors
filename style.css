@@ -58,3 +58,50 @@ body{
     border: 1px solid darkcyan;
 
 }
+.shakesComputer{
+    animation:shakes 0.8s linear  ;
+}
+
+.shakesPlayer{
+    animation:shakes 0.8s linear  ;
+}
+
+
+@keyframes shakesFor{
+    0%{
+        transform: rotate(-30deg);
+    }
+
+    25%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+    75%{
+        transform: rotate(30deg);   
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+@keyframes .shakesForPlayer{
+    0%{
+        transform: rotate(-30deg);
+    }
+
+    25%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+    75%{
+        transform: rotate(30deg);   
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
