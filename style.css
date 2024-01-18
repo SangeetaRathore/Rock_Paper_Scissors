@@ -3,7 +3,7 @@ body{
     padding: 0%;
     background-color: #2d3a3d;
     color: #fff;
-    font-family: "Poppins";
+    /* font-family: "Poppins"; */
     height: 100vh;
 }
 .message{
@@ -33,15 +33,15 @@ body{
 .playerPoints{
     margin-right: 3em;
 }
-.Options{
+.options{
     margin-top: 5em;
     display: flex;
     justify-content: space-around;
 }
-.Options button{
+.options button{
     background:  none;
     color:#fff;
-    font-family: "Poppins";
+    /* font-family: "Poppins"; */
     border:1px solid #fff;
     padding :1em 2em;
     font-size: 20px;
@@ -53,21 +53,21 @@ body{
     transition: 0.2s all linear;
 }
 
-.Options button:hover{
+.options button:hover{
     background-color: darkcyan;
     border: 1px solid darkcyan;
 
 }
-.shakesComputer{
-    animation:shakes 0.8s linear  ;
+.shakesForComputer{
+    animation:shakesForComputer 0.8s linear  ;
 }
 
-.shakesPlayer{
-    animation:shakes 0.8s linear  ;
+.shakesForPlayer{
+    animation:shakesForPlayer 0.8s linear  ;
 }
 
 
-@keyframes shakesFor{
+@keyframes shakesForComputer{
     0%{
         transform: rotate(-30deg);
     }
@@ -87,19 +87,19 @@ body{
 }
 
 
-@keyframes .shakesForPlayer{
+@keyframes shakesForPlayer{
     0%{
-        transform: rotate(-30deg);
+        transform: rotate(30deg);
     }
 
     25%{
-        transform: rotate(30deg);
-    }
-    50%{
         transform: rotate(-30deg);
     }
+    50%{
+        transform: rotate(30deg);
+    }
     75%{
-        transform: rotate(30deg);   
+        transform: rotate(-30deg);   
     }
     100%{
         transform: rotate(0deg);
