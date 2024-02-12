@@ -22,6 +22,14 @@ body{
 .player img{
     width:75%;
 }
+/* animation */
+.computerShake{
+    animation:shakesForComputer 0.8s linear  ;
+}
+
+.playerShake{
+    animation:shakesForPlayer 0.8s linear  ;
+}
 
 .points{
     margin:2em 0;
@@ -57,13 +65,6 @@ body{
     background-color: darkcyan;
     border: 1px solid darkcyan;
 
-}
-.shakesForComputer{
-    animation:shakesForComputer 0.8s linear  ;
-}
-
-.shakesForPlayer{
-    animation:shakesForPlayer 0.8s linear  ;
 }
 
 
